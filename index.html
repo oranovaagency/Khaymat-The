@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Khaymat Thé · Tous nos liens</title>
+<meta name="description" content="Tous les liens du salon de thé traditionnel Khaymat Thé (خيمة شاي) à Oran : WhatsApp, Instagram, TikTok, Facebook, itinéraire et avis Google.">
+<meta name="theme-color" content="#3a0c10">
+<meta property="og:title" content="Khaymat Thé · Tous nos liens">
+<meta property="og:description" content="Salon de thé traditionnel · Avenue des 40 Martyrs, Oran. Instagram, TikTok, Facebook, itinéraire et avis Google.">
+<meta property="og:type" content="website">
+<link rel="icon" href="img/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,800;1,700&family=Aref+Ruqaa:wght@700&family=Jost:wght@400;500;600&family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+<script>document.documentElement.classList.add("js")</script>
+<style>
+  /* Khaymat Thé : page « tous nos liens », ouverte par le QR code / NFC de la plaque. */
+  :root {
+    --w950: #2a080b; --w900: #3a0c10; --w800: #4e151a;
+    --cream: #f6eedf; --muted: #d2b49a; --gold: #e3b04b; --gold-2: #efc56f; --red: #b8282d; --red-dk: #8a1b20;
+    --line: rgba(227,176,75,.38);
+    --display: "Playfair Display", Georgia, serif; --text: "Jost", system-ui, sans-serif;
+    --ease: cubic-bezier(.22,1,.36,1);
+  }
+  [dir="rtl"] { --display: "Cairo", sans-serif; --text: "Cairo", sans-serif; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { -webkit-text-size-adjust: 100%; }
+  body { background: var(--w900); color: var(--cream); font: 400 17px/1.5 var(--text); -webkit-font-smoothing: antialiased; min-height: 100vh; min-height: 100dvh; }
+  a { color: inherit; text-decoration: none; }
+  button { font: inherit; color: inherit; background: none; border: 0; cursor: pointer; }
+  :focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; }
+
+  /* inside the tent: wine canvas, faint zellige stars, warm lamp glow */
+  .bg {
+    position: fixed; inset: 0; z-index: -1; background-color: var(--w900);
+    background-image:
+      radial-gradient(70% 45% at 50% 22%, rgba(227,176,75,.16), transparent 70%),
+      linear-gradient(180deg, transparent 55%, rgba(42,8,11,.85)),
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='88' height='88' viewBox='0 0 88 88'%3E%3Cg fill='none' stroke='%23e3b04b' stroke-opacity='.11' stroke-width='1'%3E%3Cpath d='M22 13l2.4 5.2 5.4-1.8-1.8 5.4L33 24l-5.2 2.4 1.8 5.4-5.4-1.8L22 35l-2.4-5.2-5.4 1.8 1.8-5.4L11 24l5.2-2.4-1.8-5.4 5.4 1.8z'/%3E%3Cpath d='M66 57l2.4 5.2 5.4-1.8-1.8 5.4L77 68l-5.2 2.4 1.8 5.4-5.4-1.8L66 79l-2.4-5.2-5.4 1.8 1.8-5.4L55 68l5.2-2.4-1.8-5.4 5.4 1.8z'/%3E%3C/g%3E%3C/svg%3E");
+  }
+  /* striped tent valance with scalloped hem and tassels, as on the plaque */
+  .valance { position: absolute; top: 0; left: 0; right: 0; height: 40px; pointer-events: none; }
+  .valance .stripes { height: 16px; background: repeating-linear-gradient(90deg, var(--red-dk) 0 12px, var(--red) 12px 24px); border-bottom: 1.5px solid var(--gold); }
+  .valance .hem {
+    height: 24px;
+    background:
+      radial-gradient(circle at 11px 0, var(--red) 10px, var(--gold) 10px 11.2px, transparent 11.4px) 0 0 / 22px 12px repeat-x,
+      linear-gradient(var(--gold), var(--gold)) 0 0 / 1.2px 9px repeat-x,
+      radial-gradient(circle at 50% 50%, var(--gold) 2.4px, transparent 2.8px) -11px 7px / 22px 6px repeat-x;
+  }
+
+  .wrap { max-width: 460px; margin-inline: auto; padding: 56px 18px calc(36px + env(safe-area-inset-bottom)); position: relative; }
+  .lang { position: absolute; top: 48px; inset-inline-end: 18px; height: 38px; min-width: 54px; padding: 0 14px; border: 1px solid rgba(227,176,75,.6); border-radius: 999px; background: rgba(42,8,11,.6); font: 600 13px/1 var(--text); letter-spacing: .08em; transition: background .2s, color .2s; }
+  .lang:hover { background: var(--gold); color: var(--w950); }
+
+  header { text-align: center; padding-top: 30px; }
+  .mark { color: var(--gold); }
+  .mark .ar-name { font: 700 52px/1.1 "Aref Ruqaa", serif; direction: rtl; }
+  h1 { font: 800 40px/1.05 var(--display); letter-spacing: .01em; margin-top: 10px; }
+  [dir="rtl"] h1 { font-family: "Playfair Display", Georgia, serif; }
+  .sub { color: var(--gold); font: 500 12px/1 var(--text); letter-spacing: .3em; text-transform: uppercase; margin-top: 12px; }
+  [dir="rtl"] .sub { letter-spacing: 0; font-size: 15px; }
+  .status { display: inline-flex; align-items: center; gap: 8px; margin-top: 16px; padding: 7px 14px; border-radius: 999px; background: rgba(42,8,11,.6); border: 1px solid rgba(255,255,255,.1); font: 500 13px/1 var(--text); color: var(--muted); }
+  .status i { width: 8px; height: 8px; border-radius: 50%; background: #3ddc84; }
+  .status.closed i { background: #ff5a5f; }
+  @media (prefers-reduced-motion: no-preference) { .status:not(.closed) i { animation: pulse 2s infinite; } }
+  @keyframes pulse { 0% { box-shadow: 0 0 0 0 rgba(61,220,132,.55); } 70% { box-shadow: 0 0 0 8px rgba(61,220,132,0); } 100% { box-shadow: 0 0 0 0 rgba(61,220,132,0); } }
+
+  .links { list-style: none; display: grid; gap: 12px; margin-top: 28px; }
+  .links a { display: flex; align-items: center; gap: 14px; min-height: 62px; padding: 10px 18px 10px 10px; border-radius: 16px; background: rgba(78,21,26,.82); border: 1px solid rgba(255,255,255,.08); font: 500 17px/1.2 var(--text); transition: transform .15s var(--ease), border-color .2s, background .2s; }
+  [dir="rtl"] .links a { padding: 10px 10px 10px 18px; }
+  .links a:hover { border-color: var(--line); background: rgba(94,28,34,.9); }
+  .links a:active { transform: scale(.98); }
+  .links .ic { flex: none; width: 42px; height: 42px; border-radius: 12px; display: grid; place-items: center; background: var(--w950); color: var(--cream); }
+  .links .ic svg { width: 20px; height: 20px; }
+  .links .tx { flex: 1; display: flex; flex-direction: column; gap: 2px; }
+  .links .tx small { font-size: 13px; color: var(--muted); }
+  .links .go { flex: none; width: 18px; height: 18px; color: var(--muted); transition: transform .2s var(--ease), color .2s; }
+  [dir="rtl"] .links .go { transform: scaleX(-1); }
+  .links a:hover .go { color: var(--gold); transform: translateX(3px); }
+  [dir="rtl"] .links a:hover .go { transform: scaleX(-1) translateX(3px); }
+  .links a.main { background: var(--gold); color: var(--w950); border-color: var(--gold); font-weight: 600; }
+  .links a.main .ic { background: rgba(42,8,11,.12); color: var(--w950); }
+  .links a.main .tx small { color: rgba(42,8,11,.72); }
+  .links a.main .go { color: var(--w950); }
+  .links a.main:hover { background: var(--gold-2); }
+  .links a.review .ic { background: #fff; }
+  .links .tx small.stars { color: var(--gold); letter-spacing: 2px; font-size: 13px; }
+
+  /* kilim strip above the footer */
+  .kilim { height: 22px; margin-top: 32px; border-radius: 4px; background:
+    linear-gradient(var(--gold), var(--gold)) 0 0 / 100% 1.5px no-repeat,
+    linear-gradient(var(--gold), var(--gold)) 0 100% / 100% 1.5px no-repeat,
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='22'%3E%3Cpath d='M12 4l7 7-7 7-7-7z' fill='none' stroke='%23e3b04b' stroke-width='1.5'/%3E%3Cpath d='M12 8.5l2.5 2.5-2.5 2.5-2.5-2.5z' fill='%23f6eedf'/%3E%3Cpath d='M0 9.5l1.5 1.5L0 12.5M24 9.5L22.5 11l1.5 1.5' fill='%23e3b04b'/%3E%3C/svg%3E") center / 24px 22px repeat-x,
+    var(--red); }
+
+  footer { text-align: center; margin-top: 22px; color: var(--muted); font-size: 13px; }
+  footer .addr { color: var(--cream); }
+  .credit { margin-top: 22px; display: inline-flex; align-items: center; gap: 8px; color: #a58a7e; font: 500 10px/1 var(--text); letter-spacing: .22em; text-transform: uppercase; }
+  .credit img { height: 15px; width: auto; }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .js header > *, .js .links li, .js footer, .js .kilim { animation: rise .7s var(--ease) both; }
+    .js header > :nth-child(2) { animation-delay: .05s; } .js header > :nth-child(3) { animation-delay: .1s; } .js header > :nth-child(4) { animation-delay: .15s; }
+    .js .links li { animation-delay: calc(.2s + var(--i) * 60ms); }
+    .js .kilim, .js footer { animation-delay: .6s; }
+  }
+  @keyframes rise { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
+</style>
+</head>
+<body>
+<div class="bg"></div>
+<div class="valance" aria-hidden="true"><div class="stripes"></div><div class="hem"></div></div>
+
+<div class="wrap">
+  <button class="lang" id="lang" type="button" aria-label="التبديل إلى العربية">عربي</button>
+  <header>
+    <div class="mark" lang="ar"><span class="ar-name">خيمة شاي</span></div>
+    <h1 data-i="name">Khaymat Thé</h1>
+    <p class="sub" data-i="sub">Salon de thé traditionnel · Oran</p>
+    <p class="status" id="status"><i aria-hidden="true"></i><span id="status-t" data-i="hours">Tous les jours 8h – 2h · vendredi 12h – 2h</span></p>
+  </header>
+
+  <ul class="links">
+    <li style="--i:0"><a class="review" href="https://search.google.com/local/writereview?placeid=ChIJSW6z4A-Jfg0R9buDavuAI-A" target="_blank" rel="noopener">
+      <span class="ic"><svg viewBox="0 0 48 48"><path fill="#FFC107" d="M43.6 20.1H42V20H24v8h11.3c-1.6 4.7-6.1 8-11.3 8-6.6 0-12-5.4-12-12s5.4-12 12-12c3.1 0 5.8 1.2 7.9 3.1l5.7-5.7C34 6.1 29.3 4 24 4 12.9 4 4 12.9 4 24s8.9 20 20 20 20-8.9 20-20c0-1.3-.1-2.6-.4-3.9z"/><path fill="#FF3D00" d="M6.3 14.7l6.6 4.8C14.7 15.1 19 12 24 12c3.1 0 5.8 1.2 7.9 3.1l5.7-5.7C34 6.1 29.3 4 24 4 16.3 4 9.7 8.3 6.3 14.7z"/><path fill="#4CAF50" d="M24 44c5.2 0 9.9-2 13.4-5.2l-6.2-5.2C29.2 35.1 26.7 36 24 36c-5.2 0-9.6-3.3-11.3-7.9l-6.5 5C9.5 39.6 16.2 44 24 44z"/><path fill="#1976D2" d="M43.6 20.1H42V20H24v8h11.3c-.8 2.2-2.2 4.2-4.1 5.6l6.2 5.2C37 39.2 44 34 44 24c0-1.3-.1-2.6-.4-3.9z"/></svg></span>
+      <span class="tx"><span data-i="review">Laisser un avis Google</span><small class="stars" aria-hidden="true">★★★★★</small></span>
+      <svg class="go" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg></a></li>
+    <li style="--i:1"><a class="main" href="https://wa.me/213560286569" target="_blank" rel="noopener">
+      <span class="ic"><svg viewBox="0 0 448 512" fill="currentColor"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg></span>
+      <span class="tx"><span data-i="wa">Écrivez-nous sur WhatsApp</span><small dir="ltr">0560 28 65 69</small></span>
+      <svg class="go" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg></a></li>
+    <li style="--i:2"><a href="https://www.instagram.com/lakhdar_the/" target="_blank" rel="noopener">
+      <span class="ic"><svg viewBox="0 0 448 512" fill="currentColor"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg></span>
+      <span class="tx"><span>Instagram</span><small dir="ltr">@lakhdar_the</small></span>
+      <svg class="go" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg></a></li>
+    <li style="--i:3"><a href="https://www.tiktok.com/@lakhdar_the" target="_blank" rel="noopener">
+      <span class="ic"><svg viewBox="0 0 448 512" fill="currentColor"><path d="M448 209.9a210.1 210.1 0 0 1 -122.8-39.3V349.4A162.6 162.6 0 1 1 185 188.3V278.2a74.6 74.6 0 1 0 52.2 71.2V0l88 0a121.2 121.2 0 0 0 1.9 22.2h0A122.2 122.2 0 0 0 381 102.4a121.4 121.4 0 0 0 67 20.1z"/></svg></span>
+      <span class="tx"><span>TikTok</span><small dir="ltr">@lakhdar_the</small></span>
+      <svg class="go" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg></a></li>
+    <li style="--i:4"><a href="https://www.facebook.com/LakhdarWahrani2" target="_blank" rel="noopener">
+      <span class="ic"><svg viewBox="0 0 320 512" fill="currentColor"><path d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z"/></svg></span>
+      <span class="tx"><span>Facebook</span><small>Lakhdar Wahrani</small></span>
+      <svg class="go" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg></a></li>
+    <li style="--i:5"><a href="https://maps.app.goo.gl/2Gr8ctbGmSwLvZ7a8" target="_blank" rel="noopener">
+      <span class="ic"><svg viewBox="0 0 384 512" fill="currentColor"><path d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></svg></span>
+      <span class="tx"><span data-i="map">Itinéraire</span><small data-i="addr">Avenue des 40 Martyrs, Oran</small></span>
+      <svg class="go" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg></a></li>
+  </ul>
+
+  <div class="kilim" aria-hidden="true"></div>
+  <footer>
+    <p class="addr" data-i="addr">Avenue des 40 Martyrs, Oran</p>
+    <div class="credit" dir="ltr"><span>Designed by</span><img src="img/oranova-logo-light.png" alt="Oranova" width="2000" height="426"></div>
+  </footer>
+</div>
+
+<script>
+const T = {
+  fr: { name: "Khaymat Thé", sub: "Salon de thé traditionnel · Oran", hours: "Tous les jours 8h – 2h · vendredi 12h – 2h",
+        wa: "Écrivez-nous sur WhatsApp", map: "Itinéraire", addr: "Avenue des 40 Martyrs, Oran",
+        review: "Laisser un avis Google", open: "Ouvert · ferme à", closed: "Fermé · ouvre à",
+        langBtn: "عربي", langLabel: "التبديل إلى العربية", title: "Khaymat Thé · Tous nos liens" },
+  ar: { name: "Khaymat Thé", sub: "صالون شاي تقليدي · وهران", hours: "كل يوم 08:00 – 02:00 · الجمعة 12:00 – 02:00",
+        wa: "راسلنا على واتساب", map: "الاتجاهات", addr: "شارع الأربعين شهيداً، وهران",
+        review: "اترك تقييماً على Google", open: "مفتوح · يغلق على", closed: "مغلق · يفتح على",
+        langBtn: "FR", langLabel: "Passer en français", title: "خيمة شاي · كل روابطنا" }
+};
+// Opening hours from Google Maps: [opens, closes] in hours; > 24 means after midnight.
+const DAYS = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+const HOURS = { Sun: [8, 26], Mon: [8, 26], Tue: [8, 26], Wed: [8, 26.5], Thu: [8, 26], Fri: [12, 26], Sat: [8, 26] };
+let lang = "fr";
+try { if (localStorage.getItem("khaymat-lang") === "ar") lang = "ar"; } catch (e) {}
+
+const hhmm = x => { x %= 24; const h = Math.floor(x), m = Math.round((x - h) * 60); return lang === "ar" ? `${String(h).padStart(2, "0")}:${String(m).padStart(2, "0")}` : `${String(h).padStart(2, "0")}h${String(m).padStart(2, "0")}`; };
+
+function status() {
+  const t = T[lang], el = document.getElementById("status"), txt = document.getElementById("status-t");
+  try {
+    const parts = new Intl.DateTimeFormat("en-US", { timeZone: "Africa/Algiers", weekday: "short", hour: "numeric", minute: "numeric", hour12: false }).formatToParts(new Date());
+    const get = k => parts.find(p => p.type === k).value;
+    const day = get("weekday"), h = +get("hour") % 24 + +get("minute") / 60;
+    const [o, c] = HOURS[day], yc = HOURS[DAYS[(DAYS.indexOf(day) + 6) % 7]][1] - 24;
+    let isOpen, at;
+    if (h < yc) { isOpen = true; at = yc; }            // still open from the night before
+    else if (h >= o && h < c) { isOpen = true; at = c; }
+    else { isOpen = false; at = o; }
+    el.classList.toggle("closed", !isOpen);
+    txt.textContent = `${isOpen ? t.open : t.closed} ${hhmm(at)}`;
+  } catch (e) { txt.textContent = t.hours; }
+}
+
+function render() {
+  const t = T[lang];
+  document.documentElement.lang = lang; document.documentElement.dir = lang === "ar" ? "rtl" : "ltr";
+  document.title = t.title;
+  document.querySelectorAll("[data-i]").forEach(el => { const v = t[el.dataset.i]; if (typeof v === "string") el.textContent = v; });
+  const b = document.getElementById("lang"); b.textContent = t.langBtn; b.setAttribute("aria-label", t.langLabel);
+  status();
+}
+document.getElementById("lang").addEventListener("click", () => {
+  lang = lang === "fr" ? "ar" : "fr";
+  try { localStorage.setItem("khaymat-lang", lang); } catch (e) {}
+  render();
+});
+render();
+</script>
+</body>
+</html>
